@@ -24,9 +24,7 @@ function aleatorio(menorValor: number, mayorValor: number) {
 */
 
   for (indice = 1; indice <= 270; indice++) {
-    personaEdad = Math.floor(
-      Math.random() * (mayorValor - menorValor) + menorValor
-    );
+    personaEdad = Math.floor(Math.random() * (mayorValor - menorValor+1) + menorValor);
     if (personaEdad < 21) {
       menoresDe21++;
     } else {
